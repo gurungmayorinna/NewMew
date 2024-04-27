@@ -1,0 +1,114 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+.signup-container {
+  background-image: url('background.jpg'); /* Replace with your background image path */
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+h1 {
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.facebook-btn {
+  background-color: #3B5998;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  width: 100%;
+  max-width: 300px;
+  box-sizing: border-box;
+}
+
+.or-separator {
+  color: #fff;
+  margin: 20px 0;
+}
+
+.signup-form {
+  background: rgba(255, 255, 255, 0.7);
+  padding: 20px;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 300px;
+}
+
+.signup-form input, .signup-form select, .signup-form button {
+  margin: 10px 0;
+  padding: 10px;
+  width: calc(100% - 20px);
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.signup-form button {
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.terms {
+  color: #fff;
+  font-size: 12px;
+  max-width: 300px;
+  margin-top: 20px;
+}
+
+.gender {
+  margin: 10px 0;
+}
+
+.gender input {
+  margin-right: 5px;
+}
+
+.gender label {
+  margin-right: 20px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .signup-container {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  .terms {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 20px;
+  }
+
+  .signup-form {
+    padding: 15px;
+  }
+
+  .facebook-btn {
+    padding: 8px 15px;
+  }
+}

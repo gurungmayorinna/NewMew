@@ -1,0 +1,91 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fafafa; /* Instagram-like background */
+  }
+  
+  .login-container {
+    width: 100%;
+    max-width: 350px;
+    margin: auto;
+    border: 1px solid #e6e6e6;
+    background-color: #ffffff;
+    padding: 40px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+  
+  .login-form h2 {
+    color: #262626;
+    margin-bottom: 25px;
+  }
+  
+  .login-form input {
+    width: 100%;
+    padding: 7px;
+    margin-bottom: 20px;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    background-color: #fafafa;
+    box-sizing: border-box;
+  }
+  
+  .login-form button {
+    width: 100%;
+    padding: 7px;
+    margin-bottom: 8px;
+    border: none;
+    border-radius: 4px;
+    background: #0095f6;
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  #instagram-login {
+    background: #c13584; /* Instagram color */
+    color: #ffffff;
+    font-weight: bold;
+  }
+/* ... existing styles ... */
+
+.error {
+    color: red;
+    font-size: 12px;
+    height: 12px; /* Ensure error messages don't change form size */
+    margin-top: 5px;
+  }
+  
+  .input-group {
+    margin-bottom: 20px;
+  }
+
+  /* ... existing styles ... */
+
+
+#loading-spinner {
+  border: 3px solid #f3f3f3; /* Light grey */
+  border-top: 3px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 14px;
+  height: 14px;
+  animation: spin 1s linear infinite;
+  margin-left: 5px;
+  vertical-align: middle;
+  display: none; /* Spinner is not displayed by default */
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Adding some styling to the button when it's disabled */
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
