@@ -1,3 +1,3 @@
 # NewMew
 
-<img src = ww.png>
+![Alt text](ww.png)
