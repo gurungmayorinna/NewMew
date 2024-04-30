@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NewMew Gallery</title>
+    <link rel="stylesheet" href="script12.css">
+</head>
+<body>
+    <header>
+        <h1>NewMew Gallery</h1>
+        <div class="search-section">
+            <input type="text" id="searchInput" placeholder="Search #hashtags">
+            <button onclick="fetchImages()">Search</button>
+        </div>
+        <div class="user-profile">
+            <img src="pp.jpg" alt="User Profile Picture" class="profile-pic"> <!-- Reference to a local image file -->
+            <a href="user.html"><span class="username">mig</span></a>
+
+        </div>
+    </header>
+    <section class="upload-section">
+        <input type="file" id="imageInput" accept="image/*">
+        <input type="text" id="hashtagInput" placeholder="Enter hashtags">
+        <button onclick="uploadImage()">Upload Image</button>
+    </section>
+    <main id="imageGallery">
+        <!-- Images with captions and buttons will be dynamically inserted here -->
+    </main>
+    <script src="script12.js"></script>
+</body>
+</html>
